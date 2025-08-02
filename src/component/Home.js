@@ -12,11 +12,10 @@ import About from './About'
 
 function Home() {
   return (
-    <div className='bg-green-200'>
+    <div className='bg-blue-200'>
     <Header></Header>
     <About></About>
     <Staff></Staff>
-    <ContactUs></ContactUs>
     <Footer></Footer>
     </div>
     

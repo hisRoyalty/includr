@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.lexend-font * {
+  font-family: 'Lexend', sans-serif !important;
+}
+
+.color-blind-mode {
+  filter: grayscale(0.15) contrast(1.2) saturate(0.6) brightness(0.95);
+}
+
+
+
+
+

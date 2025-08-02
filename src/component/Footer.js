@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <p className='text-center text-bold bg-green mt-4'>&copy; Life.xyz | All rights reserved.</p>
+    <p className='text-center text-bold bg-blue-200 mt-4'>&copy;Includr | All rights reserved.</p>
   )
 }
 

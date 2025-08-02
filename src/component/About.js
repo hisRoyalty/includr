@@ -7,11 +7,14 @@ const About = () => {
     <div>
       <div className="flex flex-col items-center justify-center h-screen">
         <div className="max-w-4xl mx-auto text-center">
-        <img src="https://www.dtbrownseeds.co.uk/cdn/shop/articles/DTB_Pricking_Out_Your_Seedlings.jpg?v=1696934491&width=2048" alt="logo" className="h-30 block ml-auto mr-auto w-1/2 rounded-full mb-5 mt-14" />
-          <h1 className="text-4xl font-bold text-lime-950 mb-8">Life</h1>
+<img
+  src="https://cdn.discordapp.com/attachments/1355848500180422687/1401031257139449936/dyslexia-removebg-preview.png?ex=688ecb89&is=688d7a09&hm=d5f318296414bd795bf3b30a5a2dc1ef84c915d705f38b9260039c6890c0c661&"
+  alt="logo"
+  className="block mx-auto h-60 w-auto rounded-full mb-5 mt-14 object-contain"
+/>
+          <h1 className="text-4xl font-bold text-lime-950">We Believe in Inclusivity</h1>
           <p className="text-lg text-black m-12">
-          Life is the most important thing that sustains this planet. However, us humans have made life tougher for all living beings. This website aims to help humans understand themselves and the life forms around them better and more effectively.
-          </p>
+Every Voice Matters.</p>
           <div className="flex items-center justify-center">
           </div>
         </div>

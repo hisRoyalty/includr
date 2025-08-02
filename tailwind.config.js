@@ -7,4 +7,11 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  theme: {
+    extend: {
+      fontFamily: {
+        dyslexic: ['Lexend', 'sans-serif'],
+      },
+    },
+  },
 }

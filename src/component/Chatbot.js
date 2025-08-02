@@ -1,56 +1,45 @@
-import React from 'react'
-import { useState } from 'react'
-import Header from './Header'
-import data from '../data/Dialogs.json'
+import React from 'react';
+import { useState } from 'react';
+import Header from './Header';
+import data from '../data/Dialogs.json';
 import Footer from './Footer';
 import Chatbots from "react-chatbot-kit";
 import config from "./Chatbot/Config";
 import MessageParser from "./Chatbot/MessageParser";
 import ActionProvider from "./Chatbot/ActionProvider";
-import 'react-chatbot-kit/build/main.css'
-
-
-
-
-
+import 'react-chatbot-kit/build/main.css';
 
 function Chatbot() {
-
-
-
-
-
-
     return (
-        <div className='bg-green-400'>
-          <Header/>
+        <div className='bg-blue-200 min-h-screen'>
+            <Header />
 
-          <h3 className='font-bold text-center text-5xl mt-2'>Chatbot</h3>
-          <h3 className='font-bold text-center text-3xl mt-2 font-serif'>Advanced Mental Health Artificial Intelligence</h3>
-          <h5 className='text-center mt-2 font-serif'>Mental help chatbot, powered by</h5>
-          <div className='flex items-center justify-center'>
-          <img className='w-20 justify-center items-center' src='https://media.discordapp.net/attachments/744120656278454274/1266600345346248734/xxxx-removebg-preview.png?ex=66a5bcfe&is=66a46b7e&hm=4827886ae7beba111a7eb8198c7370c3f9eb091f672db2191a3565df7a5eda00&=&format=webp&quality=lossless&width=662&height=662'></img>
-          </div>
-          <div className='min-h-screen flex items-start justify-center bg-green-200 h-60'>
-            
-          
+            <h3 className='font-bold text-center text-3xl mt-2 font-serif'>
+                Chatbot
+            </h3>
+            <h5 className='text-center mt-2 font-serif'>
+                Multi-lingual chatbot, powered by Gemini API
+            </h5>
 
-          <Chatbots
-                  config={config}
-                  messageParser={MessageParser}
-                  actionProvider={ActionProvider}          
-          ></Chatbots>
+            <div className='flex items-center justify-center mt-4'>
+                <img
+                    className='w-20'
+                    src='https://cdn.discordapp.com/attachments/1355848500180422687/1401072404079579227/Screenshot_2025-08-02_at_1.17.29_PM-removebg-preview.png?ex=688ef1db&is=688da05b&hm=df61eb9412811b4cfae7846956b6719892081ade098eca10c32e16d60c6bec6b&'
+                    alt='Chatbot Logo'
+                />
+            </div>
 
-            
+            <div className='flex items-start justify-center mt-6'>
+                <Chatbots
+                    config={config}
+                    messageParser={MessageParser}
+                    actionProvider={ActionProvider}
+                />
+            </div>
 
-            
-
-          </div>
-          <Footer></Footer>
-    
-          
+            <Footer />
         </div>
-      );
+    );
 }
 
-export default Chatbot
+export default Chatbot;
